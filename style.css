@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Xolonium';
+    src: url(assets/Xolonium-Regular.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Xolonium";
+}
+.body-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    color: #15001a;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #15001a;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: #fbfbf4;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 14px 10px;
+}
+.nav-links a:hover:not(.active) {
+    background-color: #fbfbf4;
+    color: #15001a;
+}
+.nav-links li a.active {
+    pointer-events: none;
+    color: #fbfbf4;
+}
+.short-list {
+    display: none;
+}
+.short-table-row {
+    display: none;
+}
+.short-heading {
+    display: none;
+}
+h4{
+    display: flex;
+    justify-content: flex-start;
+    color: #fbfbf4;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.collapsible {
+    background-color: #15001a;
+    color: #fbfbf4 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+.collapsible:after {
+    color: orange;
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
+    float: right;
+    margin-left: 5px;
+}
+.collapsible.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+.numeric-table {
+    width: 100%;
+}
+.string-table {
+    width: 100%;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+th {
+    color: #fbfbf4;
+    background-color: #15001a;
+    padding: 5px 5px;
+    border: 3px solid #15001a;
+    font-weight: normal;
+}
+td {
+    color: #15001a;
+    padding: 5px 5px;
+    border: 3px solid #15001a;
+    text-align: center;
+}
+@media (max-width: 730px) {
+    .long-list {
+        display: none;
+    }
+    .short-list {
+        display: flex;
+    }
+    .long-table-row {
+        display: none;
+    }
+    .short-table-row {
+        display: table-row;
+    }
+    .long-heading {
+        display: none;
+    }
+    .short-heading {
+        display: flex;
+    }
+}
