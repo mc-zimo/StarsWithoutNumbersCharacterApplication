@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: "Xolonium";
 }
+body {
+    background-color: #c9c4ca;
+}
 .body-text {
     display: flex;
     align-items: center;
@@ -34,15 +37,18 @@ nav {
     color: #fbfbf4;
     text-decoration: none;
     font-size: 14px;
-    padding: 14px 10px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    padding-right: 11px;
 }
 .nav-links a:hover:not(.active) {
-    background-color: #fbfbf4;
+    background-color: #4f3f53;
     color: #15001a;
 }
 .nav-links li a.active {
     pointer-events: none;
-    color: #fbfbf4;
+    color: #322037;
 }
 .short-list {
     display: none;
@@ -69,8 +75,8 @@ h4{
     padding: 18px;
     width: 100%;
     border: none;
-    text-align: center;
     outline: none;
+    text-align: center;
     font-size: 16px;
 }
 .content {
@@ -79,7 +85,6 @@ h4{
     overflow: hidden;
 }
 .collapsible:after {
-    color: orange;
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
     font-size: 12px;
@@ -104,13 +109,17 @@ table {
 }
 th {
     color: #fbfbf4;
-    background-color: #15001a;
+    background-color: #322037;
     padding: 5px 5px;
     border: 3px solid #15001a;
     font-weight: normal;
 }
+.subheading {
+    background-color: #4f3f53;
+}
 td {
     color: #15001a;
+    background-color: #fbfbf4;
     padding: 5px 5px;
     border: 3px solid #15001a;
     text-align: center;

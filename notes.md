@@ -1,7 +1,8 @@
 #15001a - off black navy
-#a5cbd9 - light blue
-#f5e3d6 - beige
 #fbfbf4 - off white
+#4f3f53 - mid
+#c9c4ca - low
+#322037 - high
 
 
 BIO
