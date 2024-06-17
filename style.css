@@ -125,6 +125,9 @@ td {
     border: 3px solid #15001a;
     text-align: center;
 }
+.foci-header{
+    width: 9%;
+}
 @media (max-width: 730px) {
     .long-list {
         display: none;
