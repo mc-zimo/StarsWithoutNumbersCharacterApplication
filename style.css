@@ -59,6 +59,9 @@ nav {
 .short-heading {
     display: none;
 }
+.short-table-header {
+    display: none;
+}
 h4{
     display: flex;
     justify-content: flex-start;
@@ -101,6 +104,12 @@ h4{
 .string-table {
     width: 100%;
 }
+.equipment-table {
+    width: 100%;
+}
+.inventory-table {
+    width: 100%;
+}
 table {
     table-layout: fixed;
     border-collapse: collapse;
@@ -128,6 +137,9 @@ td {
 .foci-header{
     width: 9%;
 }
+.encumbrance-data{
+    width: 9%;
+}
 @media (max-width: 730px) {
     .long-list {
         display: none;
@@ -146,5 +158,11 @@ td {
     }
     .short-heading {
         display: flex;
+    }
+    .long-table-header {
+        display: none;
+    }
+    .short-table-header {
+        display: table-cell;
     }
 }
