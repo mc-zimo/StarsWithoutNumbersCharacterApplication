@@ -6,8 +6,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>View</title>
+    <title>Home</title>
     <script src="collapsibles.js"></script>
+    <script src="datamanager.js"></script>
 </head>
 
 <body>
@@ -18,14 +19,6 @@
         <div class="short-heading">
             <h4>SWN</h4>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="short-list" href="create.html">Create</a></li>
-            <li><a class="long-list" href="create.html">Create Character</a></li>
-            <li><a class="active short-list" href="view.html">View</a></li>
-            <li><a class="active long-list" href="view.html">View Characters</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
     </nav>
     <div class="body-text">
         <h1></h1>
@@ -33,73 +26,45 @@
     <button type="button" class="collapsible">Bio</button>
     <div class="content">
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Name</th>
-                <td contenteditable>Zvi Knot</td>
-            </tr>
             <tr>
                 <th>Name</th>
-                <td contenteditable>Zvi Knot</td>
+                <td contenteditable id="name">Zvi Knot</td>
             </tr>
         </table>
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Homeworld</th>
-                <td contenteditable>Syndrilla</td>
-            </tr>
             <tr>
                 <th>Homeworld</th>
-                <td contenteditable>Syndrilla</td>
+                <td contenteditable id="homeworld">Syndrilla</td>
             </tr>
         </table>
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Species</th>
-                <td contenteditable>Human</td>
-            </tr>
             <tr>
                 <th>Species</th>
-                <td contenteditable>Human</td>
+                <td contenteditable id="species">Human</td>
             </tr>
         </table>
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Languages</th>
-                <td contenteditable>Common</td>
-            </tr>
             <tr>
                 <th>Languages</th>
-                <td contenteditable>Common</td>
+                <td contenteditable id="languages">Common</td>
             </tr>
         </table>
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Employer</th>
-                <td contenteditable>None</td>
-            </tr>
             <tr>
                 <th>Employer</th>
-                <td contenteditable>None</td>
+                <td contenteditable id="employer">None</td>
             </tr>
         </table>
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Class</th>
-                <td contenteditable>Expert</td>
-            </tr>
             <tr>
                 <th>Class</th>
-                <td contenteditable>Expert</td>
+                <td contenteditable id="class">Expert</td>
             </tr>
         </table>
         <table class="string-table">
-            <tr class="long-table-row">
-                <th>Background</th>
-                <td contenteditable>Technician</td>
-            </tr>
             <tr>
                 <th>Background</th>
-                <td contenteditable>Technician</td>
+                <td contenteditable id="background">Technician</td>
             </tr>
         </table>
     </div>
@@ -111,8 +76,8 @@
                 <th>Experience</th>
             </tr>
             <tr>
-                <td contenteditable>16</td>
-                <td contenteditable>16</td>
+                <td contenteditable id="level">16</td>
+                <td contenteditable id="experience">16</td>
             </tr>
         </table>
         <table class="numeric-table">
@@ -127,7 +92,7 @@
                 <th class="subheading">Wisdom</th>
                 <th class="subheading">Charisma</th>
             </tr>
-            <tr>
+            <tr class="short-table-row">
                 <th class="subheading">Str</th>
                 <th class="subheading">Dex</th>
                 <th class="subheading">Con</th>
@@ -136,12 +101,12 @@
                 <th class="subheading">Cha</th>
             </tr>
             <tr>
-                <td contenteditable>16</td>
-                <td contenteditable>16</td>
-                <td contenteditable>16</td>
-                <td contenteditable>16</td>
-                <td contenteditable>16</td>
-                <td contenteditable>16</td>
+                <td contenteditable id="strength">16</td>
+                <td contenteditable id="dexterity">16</td>
+                <td contenteditable id="constitution">16</td>
+                <td contenteditable id="intelligence">16</td>
+                <td contenteditable id="widsom">16</td>
+                <td contenteditable id="charisma">16</td>
             </tr>
         </table>
         <table class="numeric-table">
@@ -154,9 +119,9 @@
                 <th class="subheading">Mental</th>
                 </tr>
                 <tr>
-                    <td contenteditable>16</td>
-                    <td contenteditable>16</td>
-                    <td contenteditable>16</td>
+                    <td contenteditable id="physical">16</td>
+                    <td contenteditable id="evasion">16</td>
+                    <td contenteditable id="mental">16</td>
                 </tr>
         </table>
         <table class="numeric-table">
@@ -169,9 +134,9 @@
                 <th class="subheading">Exert</th>
                 </tr>
                 <tr>
-                    <td contenteditable>16</td>
-                    <td contenteditable>16</td>
-                    <td contenteditable>16</td>
+                    <td contenteditable id="administer">16</td>
+                    <td contenteditable id="connect">16</td>
+                    <td contenteditable id="exert">16</td>
                 </tr>
                 <tr">
                     <th class="subheading">Fix</th>
@@ -179,9 +144,9 @@
                     <th class="subheading">Know</th>
                     </tr>
                     <tr>
-                        <td contenteditable>16</td>
-                        <td contenteditable>16</td>
-                        <td contenteditable>16</td>
+                        <td contenteditable id="fix">16</td>
+                        <td contenteditable id="heal">16</td>
+                        <td contenteditable id="know">16</td>
                     </tr>
                     <tr">
                         <th class="subheading">Lead</th>
@@ -189,9 +154,9 @@
                         <th class="subheading">Perform</th>
                         </tr>
                         <tr>
-                            <td contenteditable>16</td>
-                            <td contenteditable>16</td>
-                            <td contenteditable>16</td>
+                            <td contenteditable id="lead">16</td>
+                            <td contenteditable id="notice">16</td>
+                            <td contenteditable id="perform">16</td>
                         </tr>
                         <tr">
                             <th class="subheading">Pilot</th>
@@ -199,9 +164,9 @@
                             <th class="subheading">Punch</th>
                             </tr>
                             <tr>
-                                <td contenteditable>16</td>
-                                <td contenteditable>16</td>
-                                <td contenteditable>16</td>
+                                <td contenteditable id="pilot">16</td>
+                                <td contenteditable id="program">16</td>
+                                <td contenteditable id="punch">16</td>
                             </tr>
                             <tr">
                                 <th class="subheading">Shoot</th>
@@ -209,9 +174,9 @@
                                 <th class="subheading">Stab</th>
                                 </tr>
                                 <tr>
-                                    <td contenteditable>16</td>
-                                    <td contenteditable>16</td>
-                                    <td contenteditable>16</td>
+                                    <td contenteditable id="shoot">16</td>
+                                    <td contenteditable id="sneak">16</td>
+                                    <td contenteditable id="stab">16</td>
                                 </tr>
                                 <tr">
                                     <th class="subheading">Survive</th>
@@ -219,15 +184,15 @@
                                     <th class="subheading">Trade</th>
                                     </tr>
                                     <tr>
-                                        <td contenteditable>16</td>
-                                        <td contenteditable>16</td>
-                                        <td contenteditable>16</td>
+                                        <td contenteditable id="survive">16</td>
+                                        <td contenteditable id="talk">16</td>
+                                        <td contenteditable id="trade">16</td>
                                     </tr>
                                     <tr">
                                         <th class="subheading">Work</th>
                                         </tr>
                                         <tr>
-                                            <td contenteditable>16</td>
+                                            <td contenteditable id="work">16</td>
                                         </tr>
         </table>
         <table class="numeric-table">
@@ -240,9 +205,9 @@
                 <th class="subheading">Precognition</th>
                 </tr>
                 <tr>
-                    <td contenteditable>16</td>
-                    <td contenteditable>16</td>
-                    <td contenteditable>16</td>
+                    <td contenteditable id="biopsionics">16</td>
+                    <td contenteditable id="metapsionics">16</td>
+                    <td contenteditable id="precognition">16</td>
                 </tr>
                 <tr">
                     <th class="subheading">Telekinesis</th>
@@ -250,9 +215,9 @@
                     <th class="subheading">Teleportation</th>
                     </tr>
                     <tr>
-                        <td contenteditable>16</td>
-                        <td contenteditable>16</td>
-                        <td contenteditable>16</td>
+                        <td contenteditable id="telekinesis">16</td>
+                        <td contenteditable id="telepathy">16</td>
+                        <td contenteditable id="teleportation">16</td>
                     </tr>
         </table>
     </div>

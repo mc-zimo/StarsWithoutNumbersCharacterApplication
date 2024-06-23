@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Xolonium';
+    src: url(assets/Xolonium-Regular.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Xolonium";
+}
+body {
+    background-color: #c9c4ca;
+}
+.body-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    color: #15001a;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #15001a;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: #fbfbf4;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    padding-right: 11px;
+}
+.nav-links a:hover:not(.active) {
+    background-color: #4f3f53;
+    color: #15001a;
+}
+.nav-links li a.active {
+    pointer-events: none;
+    color: #322037;
+}
+.short-list {
+    display: none;
+}
+.short-table-row {
+    display: none;
+}
+.short-heading {
+    display: none;
+}
+.short-table-header {
+    display: none;
+}
+h4{
+    display: flex;
+    justify-content: flex-start;
+    color: #fbfbf4;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.collapsible {
+    background-color: #15001a;
+    color: #fbfbf4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
+    float: right;
+    margin-left: 5px;
+}
+.collapsible.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+.numeric-table {
+    width: 100%;
+}
+.string-table {
+    width: 100%;
+}
+.equipment-table {
+    width: 100%;
+}
+.inventory-table {
+    width: 100%;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+th {
+    color: #fbfbf4;
+    background-color: #322037;
+    padding: 4px 4px;
+    border: 3px solid #15001a;
+    font-weight: normal;
+}
+.subheading {
+    background-color: #4f3f53;
+}
+td {
+    color: #15001a;
+    background-color: #fbfbf4;
+    padding: 4px 4px;
+    border: 3px solid #15001a;
+    text-align: center;
+}
+.foci-header{
+    width: 9%;
+}
+.encumbrance-data{
+    width: 9%;
+}
+@media (max-width: 730px) {
+    .long-list {
+        display: none;
+    }
+    .short-list {
+        display: flex;
+    }
+    .long-table-row {
+        display: none;
+    }
+    .short-table-row {
+        display: table-row;
+    }
+    .long-heading {
+        display: none;
+    }
+    .short-heading {
+        display: flex;
+    }
+    .long-table-header {
+        display: none;
+    }
+    .short-table-header {
+        display: table-cell;
+    }
+}

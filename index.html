@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Home</title>
+    <script src="characterManager.js"></script>
 </head>
+
 <body>
     <nav>
         <div class="long-heading">
@@ -15,17 +18,57 @@
         <div class="short-heading">
             <h4>SWN</h4>
         </div>
-        <ul class="nav-links">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a class="short-list" href="create.html">Create</a></li>
-            <li><a class="long-list" href="create.html">Create Character</a></li>
-            <li><a class="short-list" href="view.html">View</a></li>
-            <li><a class="long-list" href="view.html">View Characters</a></li>
-            <li><a href="login.html">Login</a></li>
+        <ul class="button-list">
+            <li>
+                <button type="button" class="edit-buttons" id="new-button">New</button>
+            </li>
+            <li>
+                <button type="button" class="edit-buttons" id="load-button">Load</button>
+            </li>
+            <li>
+                <button type="button" class="edit-buttons" id="save-button">Save</button>
+            </li>
         </ul>
     </nav>
-    <div class="body-text">
-        <h1>Index Page</h1>
+    <button type="button" class="collapsible">Bio</button>
+    <div class="content">
+        <table class="string-table">
+            <tr>
+                <th>Name</th>
+                <td contenteditable id="name"></td>
+            </tr>
+        </table>
+        <table class="string-table">
+            <tr>
+                <th>Species</th>
+                <td contenteditable id="species"></td>
+            </tr>
+        </table>
+        <table class="string-table">
+            <tr>
+                <th>Class</th>
+                <td contenteditable id="class"></td>
+            </tr>
+        </table>
+        <table class="string-table">
+            <tr>
+                <th>Background</th>
+                <td contenteditable id="background"></td>
+            </tr>
+        </table>
+        <table class="string-table">
+            <tr>
+                <th>Homeworld</th>
+                <td contenteditable id="homeworld"></td>
+            </tr>
+        </table>
+        <table class="string-table">
+            <tr>
+                <th>Employer</th>
+                <td contenteditable id="employer"></td>
+            </tr>
+        </table>
     </div>
 </body>
+
 </html>
