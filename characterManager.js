@@ -34,10 +34,10 @@ function setupEditButtons() {
         const transaction = db.transaction("characters", "readwrite");
 
         const store = transaction.objectStore("characters");
-        const nameIndex = store.index("name")
 
         store.put(characterObj);
 
+        resetFields();
         setFields();
     })
 
@@ -93,10 +93,29 @@ function setupDatabase() {
     };
 }
 
+function resetFields() {
+    var stats = document.querySelectorAll('[contenteditable][id]');
+
+    Array.prototype.forEach.call(stats, function (element, index) {
+        if (element.tagName == "SELECT") {
+            element.value = "";
+        }
+        else {
+            element.innerHTML = "";
+        }
+    });
+}
+
 function setFields() {
     for (const [key, value] of Object.entries(characterObj)) {
         if (key != "id") {
-            document.getElementById(key).innerHTML = value;
+            var element = document.getElementById(key);
+            if (element.tagName == "SELECT") {
+                document.getElementById(key).value = value;
+            }
+            else {
+                document.getElementById(key).innerHTML = value;
+            }
         }
     }
 }
@@ -105,6 +124,11 @@ function getFields() {
     var stats = document.querySelectorAll('[contenteditable][id]');
 
     Array.prototype.forEach.call(stats, function (element, index) {
-        characterObj[element.id] = element.innerHTML;
+        if (element.tagName == "SELECT") {
+            characterObj[element.id] = element.value;
+        }
+        else {
+            characterObj[element.id] = element.innerHTML;
+        }
     });
 }

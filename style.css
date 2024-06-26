@@ -11,14 +11,14 @@
 }
 
 body {
-    background-color: #c9c4ca;
+    background-color: #d5c2d9;
 }
 
 nav {
     display: flex;
     align-items: center;
     min-height: 8vh;
-    background-color: #15001a;
+    background-color: #4c005f;
 }
 
 h4 {
@@ -44,7 +44,7 @@ h4 {
 }
 
 .button-list button {
-    background-color: #15001a;
+    background-color: #4c005f;
     color: #fbfbf4;
     cursor: pointer;
     white-space: nowrap;
@@ -56,12 +56,12 @@ h4 {
 }
 
 .button-list button:active {
-    background-color: #4f3f53;
-    color: #15001a;
+    background-color: #4c005f;
+    color: #4c005f;
 }
 
 .collapsible {
-    background-color: #15001a;
+    background-color: #4c005f;
     color: #fbfbf4;
     cursor: pointer;
     padding: 18px;
@@ -92,18 +92,28 @@ table {
 }
 th {
     color: #fbfbf4;
-    background-color: #322037;
+    background-color: #7b4389;
     padding: 4px 4px;
-    border: 3px solid #15001a;
+    border: 3px solid #4c005f;
     font-weight: normal;
 }
 td {
-    color: #15001a;
+    color: #4c005f;
     background-color: #fbfbf4;
     padding: 4px 4px;
-    border: 3px solid #15001a;
+    border: 3px solid #4c005f;
     text-align: center;
 }
+select{
+    width: 100%;
+    font-size: 14px;
+    color: #4c005f;
+    text-align-last: center;
+    border: none;
+    outline: none;
+    padding-left: 14px;
+}
+
 
 @media (max-width: 730px) {
     .long-heading {
