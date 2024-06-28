@@ -97,7 +97,7 @@ function resetFields() {
     var stats = document.querySelectorAll('[contenteditable][id]');
 
     Array.prototype.forEach.call(stats, function (element, index) {
-        if (element.tagName == "SELECT") {
+        if (element.tagName == "SELECT" || element.tagName == "INPUT") {
             element.value = "";
         }
         else {
@@ -110,7 +110,7 @@ function setFields() {
     for (const [key, value] of Object.entries(characterObj)) {
         if (key != "id") {
             var element = document.getElementById(key);
-            if (element.tagName == "SELECT") {
+            if (element.tagName == "SELECT" || element.tagName == "INPUT") {
                 document.getElementById(key).value = value;
             }
             else {
@@ -124,7 +124,7 @@ function getFields() {
     var stats = document.querySelectorAll('[contenteditable][id]');
 
     Array.prototype.forEach.call(stats, function (element, index) {
-        if (element.tagName == "SELECT") {
+        if (element.tagName == "SELECT" || element.tagName == "INPUT") {
             characterObj[element.id] = element.value;
         }
         else {
