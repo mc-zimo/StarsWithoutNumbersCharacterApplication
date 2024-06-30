@@ -59,8 +59,9 @@ Telepathy
 Teleportation
 
 FOCI
-{Armsman
+{
 Alert
+Armsman
 Assassin
 Authority
 Close Combatant
@@ -72,6 +73,7 @@ Hacker
 Healer
 Henchkeeper
 Ironhide
+Psychic Training
 Savage Fray
 Shocking Assault
 Sniper
@@ -81,7 +83,8 @@ Starfarer
 Tinker
 Unarmed Combatant
 Unique Gift
-Wanderer}
+Wanderer
+Wild Psychic Talent}
 
 COMBAT
 -WEAPONS

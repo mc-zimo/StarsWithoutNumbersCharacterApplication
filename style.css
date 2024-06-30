@@ -57,11 +57,21 @@ td {
     text-align: center;
 }
 
-select {
+td select {
     width: 100%;
     font-size: 14px;
     background-color: #fbfbf4;
     color: #4c005f;
+    text-align-last: center;
+    border: none;
+    outline: none;
+}
+
+th select {
+    width: 100%;
+    font-size: 14px;
+    background-color: #7b4389;
+    color: #fbfbf4;
     text-align-last: center;
     border: none;
     outline: none;
@@ -122,6 +132,26 @@ select {
 }
 
 .numeric-table input{
+    width: 100%;
+    font-size: 14px;
+    color: #4c005f;
+    background-color: #fbfbf4;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.string-table input{
+    width: 100%;
+    font-size: 14px;
+    color: #4c005f;
+    background-color: #fbfbf4;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.paragraph-table input{
     width: 100%;
     font-size: 14px;
     color: #4c005f;

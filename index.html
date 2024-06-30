@@ -41,7 +41,9 @@
         <table class="string-table">
             <tr>
                 <th>Species</th>
-                <td contenteditable id="species"></td>
+                <td>
+                    <input type="text" id="species" contenteditable="">
+                </td>
             </tr>
         </table>
         <table class="string-table">
@@ -90,13 +92,17 @@
         <table class="string-table">
             <tr>
                 <th>Homeworld</th>
-                <td contenteditable id="homeworld"></td>
+                <td>
+                    <input type="text" id="homeworld" contenteditable="">
+                </td>
             </tr>
         </table>
         <table class="string-table">
             <tr>
                 <th>Employer</th>
-                <td contenteditable id="employer"></td>
+                <td>
+                    <input type="text" id="employer" contenteditable="">
+                </td>
             </tr>
         </table>
     </div>
@@ -309,6 +315,85 @@
                 <td>
                     <input type="number" pattern="\d*" id="teleportation" contenteditable>
                 </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+    <button type="button" class="collapsible">Foci</button>
+    <div class="content">
+        <table class="paragraph-table">
+            <tr>
+                <th colspan="1">
+                    <select class="fociSelect" contenteditable id="foci1">
+                        <option value=""></option>
+                        <option value="alert">Alert</option>
+                        <option value="armsman">Armsman</option>
+                        <option value="assassin">Assassin</option>
+                        <option value="authority">Authority</option>
+                        <option value="close combatant">Close Combatant</option>
+                        <option value="connected">Connected</option>
+                        <option value="die hard">Die Hard</option>
+                        <option value="diplomat">Diplomat</option>
+                        <option value="gunslinger">Gunslinger</option>
+                        <option value="healer">Healer</option>
+                        <option value="henchkeeper">Henchkeeper</option>
+                        <option value="ironhide">Ironhide</option>
+                        <option value="psychic training">Psychic Training</option>
+                        <option value="savage fray">Savage Fray</option>
+                        <option value="shocking assault">Shocking Assault</option>
+                        <option value="sniper">Sniper</option>
+                        <option value="star captain">Star Captain</option>
+                        <option value="starfarer">Starfarer</option>
+                        <option value="tinker">Tinker</option>
+                        <option value="unarmed combatant">Unarmed Combatant</option>
+                        <option value="unique gift">Unique Gift</option>
+                        <option value="wanderer">Wanderer</option>
+                        <option value="wild psychic yalent">Wild Psychic Talent</option>
+                    </select>
+                </th>
+            <tr>
+                <td class="foci"></td>
+            </tr>
+        </table>
+        <table class="paragraph-table">
+            <tr>
+                <th colspan="2">
+                    <select contenteditable id="foci2">
+                        <option value=""></option>
+                        <option value="alert">Alert</option>
+                        <option value="armsman">Armsman</option>
+                        <option value="assassin">Assassin</option>
+                        <option value="authority">Authority</option>
+                        <option value="close combatant">Close Combatant</option>
+                        <option value="connected">Connected</option>
+                        <option value="die hard">Die Hard</option>
+                        <option value="diplomat">Diplomat</option>
+                        <option value="gunslinger">Gunslinger</option>
+                        <option value="healer">Healer</option>
+                        <option value="henchkeeper">Henchkeeper</option>
+                        <option value="ironhide">Ironhide</option>
+                        <option value="psychic training">Psychic Training</option>
+                        <option value="savage fray">Savage Fray</option>
+                        <option value="shocking assault">Shocking Assault</option>
+                        <option value="sniper">Sniper</option>
+                        <option value="star captain">Star Captain</option>
+                        <option value="starfarer">Starfarer</option>
+                        <option value="tinker">Tinker</option>
+                        <option value="unarmed combatant">Unarmed Combatant</option>
+                        <option value="unique gift">Unique Gift</option>
+                        <option value="wanderer">Wanderer</option>
+                        <option value="wild psychic yalent">Wild Psychic Talent</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <td class="foci"></td>
+                <td></td>
             </tr>
         </table>
     </div>
